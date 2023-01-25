@@ -50,7 +50,7 @@ function App() {
 
   const startCall = async () => {
     try {
-      const displayStream = await navigator.mediaDevices.getDisplayMedia({
+      const displayStream = await navigator.mediaDevices.getUserMedia({
         audio: true,
         video: true
       });
