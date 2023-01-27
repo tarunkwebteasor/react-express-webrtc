@@ -5,7 +5,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     volumes:
-      -./backend:/app
+      - ./backend:/app
     ports:
       - "8080:8080"
     networks:
@@ -17,7 +17,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      -./frontend/dist/:/usr/share/nginx/html
+      - ./frontend/dist/:/usr/share/nginx/html
     networks:
       - webrtc-net
 networks:
